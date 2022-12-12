@@ -1,7 +1,7 @@
 const express = require("express")
 const app = express()
 
-app.get("/getfibonacci", (req, res) => {
+app.get("/fibonacci", (req, res) => {
   const startTime = new Date()
   const result = fibonacci(parseInt(req.query.number))
   const endTime = new Date()
@@ -12,7 +12,7 @@ app.get("/getfibonacci", (req, res) => {
   })
 })
 
-app.get("/testrequest", (req, res) => {
+app.get("/test", (req, res) => {
   res.send("I am unblocked now")
 })
 
